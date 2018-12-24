@@ -18,7 +18,7 @@ import WebsiteVisitor from './models/WebsiteVisitor';
 mongoose.Promise = global.Promise;
 
 // Web server port
-const webAppPort = process.env.PORT || 80;
+const webAppPort = process.env.PORT || 8000;
 
 // MongoDB connection string
 const mongodbUri = process.env.MONGODB_URI || 'mongodb://localhost:27017/wedding';
