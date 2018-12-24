@@ -6,7 +6,7 @@
   "bin": "./bin/app.bundle.js",
   "scripts": {
     "install": "webpack",
-    "start": "node ./bin/app.bundle.js"
+    "start": "npm i && node ./bin/app.bundle.js"
   },
   "repository": {
     "type": "git",
