@@ -1,7 +1,7 @@
 {
-  "name": "jociandkalwedding",
+  "name": "vivianaymontrewedding",
   "version": "1.0.0",
-  "description": "Jocelyn & Kal Wedding Website",
+  "description": "Viviana & Montre Wedding Website",
   "private": true,
   "bin": "./bin/app.bundle.js",
   "scripts": {
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kaloianm/wedding.git"
+    "url": "git+https://github.com/tredavis/wedding.git"
   },
-  "author": "Kaloian Manassiev",
+  "author": "Montre Davis",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kaloianm/wedding/issues"
+    "url": "https://github.com/tredavis/weddingissues"
   },
-  "homepage": "https://github.com/kaloianm/wedding#readme",
+  "homepage": "https://github.com/tredavis/wedding",
   "dependencies": {
     "async": "^2.5.0",
     "body-parser": "^1.15.2",
