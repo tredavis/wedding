@@ -17,7 +17,7 @@
 
 body {
     background-attachment: fixed;
-    background-image: url('../img/bgimage.jpg');
+    background-image: url('https://s3.amazonaws.com/davis-wedding-bucket/wedding-field.JPG');
     background-position-x: center;
     background-position-y: top;
     background-repeat: no-repeat;
@@ -495,7 +495,7 @@ img.location-image {
 /* Phablet */
 @media (max-width: 600px) {
     body {
-        background-image: url('../img/bgimage-mobile.jpg');
+        background-image: url('https://s3.amazonaws.com/davis-wedding-bucket/wedding-field.JPG');
         background-size: 140%;
     }
 
