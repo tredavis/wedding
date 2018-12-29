@@ -60,99 +60,6 @@ class RSVPForm extends React.Component {
                 }
                 <br />
 
-                {guestInfo.attendance === 'yes' &&
-                    <div>
-                        {this.renderRadioInput(
-                            'meal',
-                            'Entreé preference*:',
-                            [
-                                { label: 'I EAT MEAT', value: 'meat' },
-                                { label: 'I DO NOT EAT MEAT', value: 'vegetarian' }
-                            ],
-                            guestInfo)}
-                        <br />
-
-                        {this.renderTextInput(
-                            'dietaryRestrictions',
-                            'Any other dietary restrictions?',
-                            guestInfo)}
-                        <br />
-
-                        {this.renderRadioInput(
-                            'cocktailEvening',
-                            'Will you be joining us for the cocktail evening on 30 August (day before the wedding)*?',
-                            [
-                                { label: 'YES', value: 'yes' },
-                                { label: 'NO', value: 'no' }
-                            ],
-                            guestInfo)}
-                        <br />
-
-                        {this.renderRadioInput(
-                            'hangoverBrunch',
-                            'Will you be joining us for the boozy farewell brunch on 1 September (day after the wedding)*?',
-                            [
-                                { label: 'YES', value: 'yes' },
-                                { label: 'NO', value: 'no' }
-                            ],
-                            guestInfo)}
-                        <br />
-
-                        {this.renderRadioInput(
-                            'attendance',
-                            'Plus one*:',
-                            [
-                                { label: 'I WILL BE BRINGING A PLUS ONE', value: 'yes' },
-                                { label: 'I WILL NOT BE BRINGING A PLUS ONE', value: 'no' }
-                            ],
-                            guestPlusOneInfo)}
-                    </div>
-                }
-                <br />
-
-                {guestInfo.attendance === 'yes' && guestPlusOneInfo.attendance === 'yes' &&
-                    <div>
-                        {this.renderTextInput('name', 'Name:', guestPlusOneInfo)}
-                        <br />
-                        {this.renderRadioInput(
-                            'meal',
-                            'Entreé preference*:',
-                            [
-                                { label: 'I EAT MEAT', value: 'meat' },
-                                { label: 'I DO NOT EAT MEAT', value: 'vegetarian' }
-                            ],
-                            guestPlusOneInfo)}
-                        <br />
-
-                        {this.renderTextInput(
-                            'dietaryRestrictions',
-                            'Other dietary restrictions?',
-                            guestPlusOneInfo)}
-                        <br />
-
-                        {this.renderRadioInput(
-                            'cocktailEvening',
-                            'Will you be joining us for the cocktail evening on 30 August (day before the wedding)*?',
-                            [
-                                { label: 'YES', value: 'yes' },
-                                { label: 'NO', value: 'no' }
-                            ],
-                            guestPlusOneInfo)}
-                        <br />
-
-                        {this.renderRadioInput(
-                            'hangoverBrunch',
-                            'Will you be joining us for the boozy farewell brunch on 1 September (day after the wedding)*?',
-                            [
-                                { label: 'YES', value: 'yes' },
-                                { label: 'NO', value: 'no' }
-                            ],
-                            guestPlusOneInfo)}
-                        <br />
-                    </div>
-                }
-                <br />
-
                 {this.state.submitStatus &&
                     <div className={this.state.submitStatus.isError ? 'alert-error' : 'alert-success'}>
                         <span className="alert-closebtn"
@@ -172,16 +79,6 @@ class RSVPForm extends React.Component {
      * the validation error otherwise.
      */
     validate() {
-        function validateGuestDetail(info) {
-            if (!info.meal)
-                return "Please let us know of your or your guest's meal preference";
-            if (!info.cocktailEvening)
-                return 'Please let us know whether you will be joining us for the cocktail evening on the day before the wedding';
-            if (!info.hangoverBrunch)
-                return 'Please let us know whether you will be joining us for the farewell brunch on the day after the wedding';
-
-            return null;
-        }
 
         const guestInfo = this.state.guestInfo;
 
@@ -197,23 +94,6 @@ class RSVPForm extends React.Component {
         if (!guestInfo.email || guestInfo.email.trim().empty || !isEmail(guestInfo.email))
             return 'Please give us your valid email';
 
-        const guestValidation = validateGuestDetail(guestInfo);
-        if (guestValidation) {
-            return guestValidation;
-        }
-
-        const guestPlusOneInfo = this.state.guestPlusOneInfo;
-
-        if (!guestPlusOneInfo.attendance)
-            return 'Please let us know whether you will be bringing a plus one';
-
-        if (guestPlusOneInfo.attendance === 'no')
-            return null;
-
-        if (!guestPlusOneInfo.name || guestPlusOneInfo.name.trim().empty)
-            return 'The plus one name field cannot be left empty';
-
-        return validateGuestDetail(guestPlusOneInfo);
     }
 
     /**

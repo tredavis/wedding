@@ -38,14 +38,13 @@ const websiteContent = (
         <div className="row">
           <div className="one-half column">
             <p>
-              <a href="img/jocelyn-baby.jpg"><img className="thumbnail" src="img/jocelyn-baby.jpg" alt="Viviana" /></a>
-              Viviana is very cheesy.
-            </p>
+              <a><img className="vthumbnail" src="https://s3.amazonaws.com/davis-wedding-bucket/vivianababy.JPG" alt="Viviana's bio" /></a>
+              Viviana Isis Haynes grew up in Spring, TX, and was born into and amazing, loving, and supportive family, She is the eldest child of Tibisuly and Mark Haynes, and has been fortunate to be big sister to Karina and Mark III.  Also important in her life are her two pups, Mona and Mimi.  Viviana will soon be expanding her family with her union to Montre Laron Davis.  God brought these two love birds together when they needed each other the most and He continues to play a big part in their lives.  Their journey together has been unbelievable since day one and filled with so many blessings and adventures that will continue in the next chapter of their lives,  beginning with the celebration of their wedding will all of their closest friends and family.</p>
           </div>
 
           <div className="one-half column">
             <p>
-              <a href="img/kal-baby.jpg"><img className="thumbnail" src="img/kal-baby.jpg" alt="Montre" /></a>
+              <a><img className="thumbnail" src="img/kal-baby.jpg" alt="Montre's bio" /></a>
               Montre is very cheesy.
             </p>
           </div>
@@ -54,16 +53,13 @@ const websiteContent = (
 
       <hr />
 
-      {/* <p>
-        <img className="large-image" src="img/proposal.jpg" alt="Kal Proposing To Jocelyn" />
-      </p> */}
+      <p>
+        <img className="large-image" style={{height: '30%', width: '30%'}} src="https://s3.amazonaws.com/davis-wedding-bucket/IMG_0469.jpeg" alt="Kal Proposing To Jocelyn" />
+      </p>
 
       <h2>OUR STORY</h2>
       <p>
-        Being children of the modern day and age, our story began with venturing onto OK Cupid. As hesitant as one of us was to engage
-        herself with a complete stranger online (while the other happily explored with enthusiasm) on our first date it soon became
-        apparent that we met the natural occurrences when 2 people meet and all feelings of the unknown disappeared because at that moment
-        right in front of me I was meeting my best friend. As the cliche tale goes, the rest is history.
+        We met 
       </p>
     </TopicContainer>
 
@@ -71,7 +67,7 @@ const websiteContent = (
       <div className="container">
         <div className="twelve column" style={{textAlign: "center"}}>
           <h2>CEREMONY &amp; Reception</h2>
-          <p>5:00 - 9:00 pm @ The Springs in Conroe</p>
+          <p>5:00 - 10:30 pm @ The Springs in Conroe</p>
           <p>
             <a href="http://thespringsevents.com/houston-wedding-venues/lake-conroe-tx.html"><img className="location-image" src="https://s3.amazonaws.com/davis-wedding-bucket/venue.jpg" alt="Sveti Marak (St Mark's)" /></a>
           </p>
@@ -105,32 +101,39 @@ const websiteContent = (
       <hr />
 
       {/* <h2>ACCOMMODATIONS</h2> */}
-      <p>Once on the island in Hvar Town there are various accommodation options ranging from fancy hotels to renting an apartment
-         on <a href="https://goo.gl/uHTDYn">AirBnB</a>. The wedding will be in the Amfora Resort so any accommodation within walking
-         distance from there should be fine.
+      <p>
+        For your convenience, a block of rooms have been reserved for the <i>"Haynes/Davis Wedding"</i> at Baymont Inn & Suites Conroe/The Woodlands.
       </p>
-      <p>From our research we have found that hotels are fairly expensive and there are very nice AirBnB options available, so we highly
-         recommend doing that.
+      <p>
+         <a href="https://www.wyndhamhotels.com/baymont/conroe-texas/baymont-inn-and-suites-conroe/overview"><img className="location-image" src="https://s3.amazonaws.com/davis-wedding-bucket/baymont.jpg" alt="Baymont Inn & Suites" /></a>
       </p>
-      <p>For guests wishing to stay in a hotel, the <a href="http://www.suncanihvar.com/">Suncani Hvar</a> chain of hotels offers a 20%
-         discount using <SecretTooltip fnTooltip={() => { return 'WEDDKALOIANJOCELYN'; }}>this code</SecretTooltip> (please click on the
-         'this' in order to show it). The code must be entered in the <i>"Corporate/Promo Code ?"</i> section for the discounted prices to
-         apply and is valid for staying 5 days prior and 5 days after the wedding day. While this code indeed reduces the listed prices,
-         we have found that booking through <a href="https://goo.gl/2xzaIg">Expedia</a> or <a href="https://goo.gl/z6zsZk">Hotels.com</a>&nbsp;
-         shows about the same prices or in some cases even cheaper, so please bear that in mind as well.
+      <p style={{textAlign: "center"}}>
+          <a href="https://goo.gl/maps/PU6ij45F2T32">Google Maps</a>
       </p>
     </TopicContainer>
 
     <TopicContainer id="gifts" title="Gifts">
       <p>Dear family and friends,</p>
-      <p>We feel honoured that you are all travelling a long way to come and celebrate our special day with us. For this reason we don't
+      <p>We feel honored that you are all travelling a long way to come and celebrate our special day with us. For this reason we don't
          want anyone to feel obliged to buy us gifts. Your presence is the biggest gift.
       </p>
-      <p>If you do feel that you want to give us a gift please remember that just like you, we will only have a suitcase full of clothes
-        so we won't be able to carry any items back.
+      <p>If you do feel that you want to give us a gift please. We are registered at Amazon and Target.
       </p>
       <p>Thank you in advance!
       </p>
+
+      <div className="container">
+        <div className="row">
+          <div className="col">
+            <a href="https://www.amazon.com/wedding/viviana-haynes-montre-davis-houston-february-2019/registry/1SNN16PJ9WPG0">
+              <img width="40%" src="https://s3.amazonaws.com/davis-wedding-bucket/amazon_logo_1_.png"></img>
+            </a>
+          </div>
+          <div className="col"> 
+          <img width="40%" src="https://s3.amazonaws.com/davis-wedding-bucket/target.jpg"></img>
+          </div>
+        </div>
+      </div>
     </TopicContainer>
 
   </div>
