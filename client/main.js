@@ -39,13 +39,13 @@ const websiteContent = (
           <div className="one-half column">
             <p>
               <a><img className="vthumbnail" src="https://s3.amazonaws.com/davis-wedding-bucket/vivianababy.JPG" alt="Viviana's bio" /></a>
-              Viviana Isis Haynes grew up in Spring, TX, and was born into and amazing, loving, and supportive family, She is the eldest child of Tibisuly and Mark Haynes, and has been fortunate to be big sister to Karina and Mark III.  Also important in her life are her two pups, Mona and Mimi.  Viviana will soon be expanding her family with her union to Montre Laron Davis.  God brought these two love birds together when they needed each other the most and He continues to play a big part in their lives.  Their journey together has been unbelievable since day one and filled with so many blessings and adventures that will continue in the next chapter of their lives,  beginning with the celebration of their wedding will all of their closest friends and family.</p>
+              Viviana Isis Haynes grew up in Spring, TX, and was born into and amazing, loving, and supportive family, She is the eldest child of Tibisuly and Mark Haynes, and has been fortunate to be big sister to Karina and Mark III.  Also important in her life are her two pups, Mona and Mimi.  Viviana will soon be expanding her family with her union to Montre Laron Davis.</p>
           </div>
 
           <div className="one-half column">
             <p>
-              <a><img className="thumbnail" src="img/kal-baby.jpg" alt="Montre's bio" /></a>
-              Montre is very cheesy.
+              <a><img className="vthumbnail" src="https://s3.amazonaws.com/davis-wedding-bucket/IMG_4434.JPG" alt="Montre's bio" /></a>
+              Montre Laron Davis was born in Tulsa, Oklahoma to Marian Jackson and Michael Davis. Although, you wouldn't believe if you saw how much he cheers for the Houston Texans! (it was meant to be 😊) The moment he met Viviana, he couldn’t wait to spend the rest of his life with her. 
             </p>
           </div>
         </div>
@@ -57,9 +57,9 @@ const websiteContent = (
         <img className="large-image" style={{height: '30%', width: '30%'}} src="https://s3.amazonaws.com/davis-wedding-bucket/IMG_0469.jpeg" alt="Kal Proposing To Jocelyn" />
       </p>
 
-      <h2>OUR STORY</h2>
+      <h2>GOD'S PLAN</h2>
       <p>
-        We met 
+      God brought these two love birds together when they needed each other the most and He continues to play a big part in their lives.  Their journey together has been unbelievable since day one and filled with so many blessings and adventures that will continue in the next chapter of their lives, beginning with the celebration of their wedding with all of their closest friends and family.
       </p>
     </TopicContainer>
 

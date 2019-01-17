@@ -11,6 +11,10 @@
     font-weight: normal;
 }
 
+img {
+    image-orientation: from-image !important;
+}
+
 #header-cer {
     text-align: center;
 }
@@ -333,11 +337,11 @@ img.vthumbnail {
     -webkit-border-radius: 2px;
     border-radius: 2px;
 
-    /* -webkit-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
     -moz-transform: rotate(90deg);
     -o-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
-    transform: rotate(90deg); */
+    transform: rotate(90deg);
 }
 
 img.thumbnail {
